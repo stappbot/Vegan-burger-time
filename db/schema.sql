@@ -1,3 +1,8 @@
-DELETE DATABASE IF EXISTS burgers.db;
+DELETE DATABASE IF EXISTS burgers_db;
 
-CREATE DATABASE burgers.db;
+CREATE TABLE burgers (
+    id INT NOT NULL AUTO_INCREMENT,
+    burger_name VARCHAR(255) NOT NULL,
+    devoured BOOL DEFAULT false,
+    PRIMARY KEY (id)
+)
