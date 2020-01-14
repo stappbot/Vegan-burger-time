@@ -1,0 +1,3 @@
+DELETE DATABASE IF EXISTS burgers.db;
+
+CREATE DATABASE burgers.db;
